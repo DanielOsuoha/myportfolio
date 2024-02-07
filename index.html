@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Osuoha - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        const middleProjectContainers = document.querySelectorAll('.project-container.animated');
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                }
+            });
+        }, { threshold: 0.5 });
+
+        middleProjectContainers.forEach(container => {
+            observer.observe(container);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div id="header-id">
+            <a href="#"><img src="images/profileimage.jpg" alt="A profile image of Daniel"></a>
+            <h1>Daniel Osuoha</h1>
+        </div>
+        <p>Software Developer | Cybersecurity & Cloud Computing Major</p>
+    </header>
+    <div class="title-bar">
+        <div class="menu-icon" onclick="toggleMenu()">
+            <!-- Unicode character for the menu icon (you can customize this) -->
+            &#9776;
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">SKills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact Me</a></li>
+            </ul>
+        </nav>
+    </div>
+    <section id="about" class="animated">
+        <h2>About Me</h2>
+        <p id="abouttext">Hi I am <b>Daniel Osuoha</b>, results-driven Cybersecurity and Cloud Computing major at
+            Grambling State University. I bring a diverse
+            skill set and a passion for leveraging technology to fuel innovation. Proficient in Java, Python, MySQL,
+            JDBC, PHP, and Django, I have honed my programming skills through hands-on projects that showcase my
+            problem-solving mindset and commitment to impactful solutions.
+        </p>
+    </section>
+    <section class="animated" id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><b>Programming Languages: </b>Java, Python, PHP</li>
+            <li><b>Database Management:</b> MySQL, JDBC</li>
+            <li><b>Web Frameworks: </b>Django, Spring </li>
+            <li><b>Scripting: Bash, </b>Python </li>
+            <li>GitHub |Team Work |Communication | Problem Solving</li>
+        </ul>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <!-- Add your contact information and a form if necessary -->
+        <div class="project-container animated">
+            <div class="project">
+                <img src="images\calculator.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h3>Calculator App with Java and MySQL</h3>
+                    <p>Engineered a feature-rich calculator application with a history tab,
+                        incorporating JDBC to connect to a relational database for enhanced functionality.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images\tictactoe .jpg" alt="Project 1">
+                <div class="project-details">
+                    <h3> Intelligent Tic-Tic-Toe Game:</h3>
+                    <p>Developed an intelligent Tic-Tic-Toe game, showcasing strategic decision-making
+                        algorithms. |Java, Swing</p>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="project-container animated">
+            <div class="project">
+                <img src="images/hospital.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h3> Hospital Inventory System: </h3>
+                    <p> Collaborating with a colleague, I am actively contributing to the development of a
+                        hospital inventory system. Responsible for Java and JDBC implementation to manage hospital
+                        bookings efficiently.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/library.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h3> Library Management System with PHP</h3>
+                    <p>Created a library management system using PHP and MySQL for backend
+                        functionality, enabling users to search, add, and remove books with ease.</p>
+                </div>
+            </div>
+        </div>
+        <div class="project-container animated">
+            <div class="project">
+                <img src="images/bash.jpg" alt="Project 1">
+                <div class="project-details">
+                    <h3>Bash Script for MySQL Port Scanning With NMAP:</h3>
+                    <p>Wrote a Bash script in a Linux environment that efficiently scans for
+                        open MySQL ports on devices within a network.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <section id="contact" class="animated">
+            <h2>Contact Me</h2>
+        </section>
+        <a href="https://www.linkedin.com/in/daniel-osuoha-8090222b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVP97eI5eSBCvrZeiScMMIg%3D%3D"
+            target="_blank">
+            <img id="linkedin" class="icon" src="logos\LI-In-Bug.png" alt="LinkedIn Profile">
+        </a>
+        <!-- make sure to add the link to your git hub page here -->
+        <a href="https://www.hackerrank.com/profile/dan646655" target="_blank">
+            <img id="hackerrank" class="icon" src="logos\hackerranklogo.jpg" alt="GitHub Profile">
+        </a>
+        <!-- Add hacker rank details here -->
+        <a href="https://github.com/" target="_blank" id="gitlink">
+            <img id="github" class="icon" src="logos\github logo.png" alt="GitHub Profile">
+        </a>
+        <p>&copy; 2024 Daniel Osuoha <a href="mailto:dosuoha@gsumail.gram.edu"
+                style="text-decoration:none; color: rgb(235, 246, 204)">dosuoha@gsumail.gram.edu</a></p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
