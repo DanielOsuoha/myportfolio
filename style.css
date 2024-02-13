@@ -180,12 +180,29 @@ li{
     opacity: 1;
     transform: translateY(0px);
 }
+
 @media screen and (max-width: 768px) {
+    /* Adjust header height for mobile devices */
+    header {
+        padding: 15px;
+    }
+
+    /* Make menu icon smaller for mobile devices */
+    .menu-icon {
+        font-size: 20px;
+    }
+
+    /* Adjust font size and spacing for navigation links on mobile devices */
     nav li {
-        margin: 0 10px; /* Adjust margin for smaller screens */
+        margin: 0 10px;
+        font-size: 14px;
+    }
+
+    /* Adjust width of project containers for mobile devices */
+    .project {
+        width: 100%;
     }
 }
-
 @media screen and (max-width: 480px) {
     nav li {
         margin: 0 5px; /* Further adjust margin for smaller screens */
