@@ -180,6 +180,13 @@ li{
     opacity: 1;
     transform: translateY(0px);
 }
+#certs a{
+    text-decoration: none;
+    color: #176e5cf5;
+}
+#certs a:hover{
+    color: #7d1ea0;
+}
 
 @media screen and (max-width: 768px) {
     /* Adjust header height for mobile devices */
@@ -255,6 +262,7 @@ li{
     nav li {
         margin: 0 5px; /* Further adjust margin for smaller screens */
     }
+
     .project-details {
         position: absolute;
         bottom: 0;
