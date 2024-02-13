@@ -272,4 +272,14 @@ li{
     .project:hover .project-details {
         transform: translateY(0);
     }
+    #abouttext {
+        opacity: 1;
+        padding: 10px;
+        transform: translateY(-10px);
+        /* font-style: oblique; */
+        font-size: medium;
+        font-stretch: ultra-expanded;
+        font-weight: 530;
+        transition: opacity 0.7s ease, transform 0.7s ease;
+    }
 }
