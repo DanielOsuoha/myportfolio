@@ -2,7 +2,7 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
+    background-color: rgba(243, 243, 243, 0.856);
     color: #333;
 }
 
@@ -17,13 +17,14 @@ header {
     color: #fff; 
     padding: 10px;
 }
-/* Implement the symbol using media querry */
+/* Implement the symbol using media query */
 
 .title-bar h1 {
     margin: 0;
 }
 
 section {
+    padding: 5px;
     margin: 20px;
 }
 .menu-icon {
