@@ -8,21 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg+xml" href="logos/mylogo.svg">
     <!-- <link rel="alternate icon" type="image/png" href="favicon.png"> -->
-    <script>
-        const middleProjectContainers = document.querySelectorAll('.project-container.animated');
 
-        const observer = new IntersectionObserver(entries => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('in-view');
-                }
-            });
-        }, { threshold: 0.5 });
-
-        middleProjectContainers.forEach(container => {
-            observer.observe(container);
-        });
-    </script>
 </head>
 
 <body>
@@ -34,21 +20,20 @@
         <p>Software Developer | Cybersecurity & Cloud Computing Major</p>
     </header>
     <div class="title-bar">
-        <div class="menu-icon" onclick="toggleMenu()">
-            <!-- Unicode character for the menu icon (you can customize this) -->
-            &#9776;
-        </div>
+        <!-- <div class="menu-icon" onclick="toggleMenu()"> -->
         <nav>
-            <ul>
+            <ul style>
                 <li><a href="#about">About Me</a></li>
                 <li><a href="#skills">SKills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact Me</a></li>
+                <li><a href="#certs">Certifications</a></li>
             </ul>
         </nav>
+    <!-- </div> -->
     </div>
     <section id="about" class="animated">
-        <h2>ABOUT ME</h2>
+        <h2>About Me</h2>
         <p id="abouttext">Hi I am <b>Daniel Osuoha</b>, results-driven Cybersecurity and Cloud Computing major at
             Grambling State University. I bring a diverse
             skill set and a passion for leveraging technology to fuel innovation. Proficient in Java, Python, MySQL,
@@ -57,7 +42,7 @@
         </p>
     </section>
     <section id="skills">
-        <h2>SKILLS</h2>
+        <h2>Skills</h2>
         <!-- Here in the skills section you can use the pictures instead of the words -->
         <ul>
             <li><b>Programming Languages: </b>Java, Python, PHP</li>
@@ -68,7 +53,7 @@
         </ul>
     </section>
     <section class="animated" id="certs">
-        <h2>CERTIFICATIONS</h2>
+        <h2>Certifications</h2>
         <ul>
             <li><a href="https://www.credly.com/go/dOqmjj9opfHz5KzH3vvMeQ">Working in a digital world: Professional
                     Skills</a><b> - IBM</b></li>
@@ -78,14 +63,13 @@
             <li>Python Certifications - <a href="https://www.hackerrank.com/certificates/9e417727fb63">Hacker
                     Rank,</a><a href="https://www.sololearn.com/certificates/CC-55HTWCHK">Sololearn</a></li>
             <li>SQL Certifications - <a href="https://www.hackerrank.com/certificates/753f6cdbb7fa">Hacker Rank,</a> <a
-                    href="">Sololearn,</a> <a href="">W3 Schools</a></li>
-            <li>Java Certifications - <a href="">Hacker Rank,</a> <a
-                    href="https://www.sololearn.com/certificates/CC-R0OTRGBG">Sololearn,</a> <a href="">W3 Schools</a>
+                    href="">Sololearn,</a></li>
+            <li>Java Certifications - <a href="">Hacker Rank,</a> <a href="https://www.sololearn.com/certificates/CC-R0OTRGBG">Sololearn,</a>
             </li>
         </ul>
     </section>
     <section id="projects">
-        <h2 style="text-align: center;">PROJECT</h2>
+        <h2 style="text-align: center;">Projects</h2>
         <!-- Add your contact information and a form if necessary -->
         <div class="project-container animated">
             <div class="project">
@@ -140,36 +124,40 @@
         </div>
     </section>
     <section class="animated" id="certs" style="background-color: rgb(247, 243, 239); border-radius:20px">
-        <h2>AWARDS/ACHIEVEMENTS</h2>
+        <h2>Awards/Achievements</h2>
         <ul>
-            <li><a href="https://www.credly.com/go/dOqmjj9opfHz5KzH3vvMeQ"></a> Presidential Scholar at Grambling State University and honored to be on a fully-funded scholarship, a 
-                testament to my academic merit and dedication. </li>
+            <li><a href=""> Presidential Scholar at Grambling State
+                University and honored to be on a fully-funded scholarship, a
+                testament to my academic merit and dedication.</a> </li>
             <li><a href="">Scored 790/800 (99th percentile) in the SAT Mathematics.</a><b></b></li>
-            <li><a href="https://www.hackerrank.com/certificates/9e417727fb63"> Achieved the highest performance in the 2022 West African Senior Secondary School Exams, emerging as the 
-                top student from The Gambia, underscoring my academic excellence.</a> <a
-                    href="https://www.sololearn.com/certificates/CC-55HTWCHK"></a></li>
-            <li><a href="https://www.hackerrank.com/certificates/753f6cdbb7fa">Emerged victorious in the 2022 Gambian National Mathematics Competition, triumphing over 50 top schools 
-                nationwide</a></li>
+            <li><a href="https://www.hackerrank.com/certificates/9e417727fb63"> Achieved the highest performance in the
+                    2022 West African Senior Secondary School Exams, emerging as the
+                    top student from The Gambia, underscoring my academic excellence.</a>
+            <li><a href="">Emerged victorious in the 2022 Gambian
+                    National Mathematics Competition, triumphing over 50 top schools
+                    nationwide</a></li>
         </ul>
     </section>
     <footer>
         <section id="contact" class="animated">
             <h2>Contact Me</h2>
+            <p><a href="mailto:dosuoha@gsumail.gram.edu"
+                    style="text-decoration:none; color: rgb(235, 246, 204)">dosuoha@gsumail.gram.edu</a></p>
         </section>
-        <a href="https://www.linkedin.com/in/daniel-osuoha-8090222b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVP97eI5eSBCvrZeiScMMIg%3D%3D"
-            target="_blank">
-            <img id="linkedin" class="icon" src="logos\LI-In-Bug.png" alt="LinkedIn Profile">
-        </a>
-        <!-- make sure to add the link to your git hub page here -->
-        <a href="https://www.hackerrank.com/profile/dan646655" target="_blank">
-            <img id="hackerrank" class="icon" src="logos\hackerranklogo.jpg" alt="GitHub Profile">
-        </a>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/in/daniel-osuoha-8090222b1?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BVP97eI5eSBCvrZeiScMMIg%3D%3D"
+                    target="_blank">
+                    <img id="linkedin" class="icon" src="logos\LI-In-Bug.png" alt="LinkedIn Profile">
+                </a></li>
+            <li> <a href="https://www.hackerrank.com/profile/dan646655" target="_blank">
+                    <img id="hackerrank" class="icon" src="logos\hackerranklogo.jpg" alt="GitHub Profile">
+                </a></li>
+            <li><a href="https://github.com/" target="_blank" id="gitlink">
+                    <img id="github" class="icon" src="logos\github logo.png" alt="GitHub Profile">
+                </a></li>
+        </ul>
+        <p>&copy; 2024 Daniel Osuoha</p>
         <!-- Add hacker rank details here -->
-        <a href="https://github.com/" target="_blank" id="gitlink">
-            <img id="github" class="icon" src="logos\github logo.png" alt="GitHub Profile">
-        </a>
-        <p>&copy; 2024 Daniel Osuoha <a href="mailto:dosuoha@gsumail.gram.edu"
-                style="text-decoration:none; color: rgb(235, 246, 204)">dosuoha@gsumail.gram.edu</a></p>
     </footer>
     <script src="script.js"></script>
 </body>

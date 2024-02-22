@@ -2,64 +2,73 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgba(243, 243, 243, 0.856);
-    color: #333;
+    background-color: #ffffff;
+    color: #080808;
+}
+.social-links li {
+    display: inline;
+    margin: 0 10px;
 }
 
 header {
-    background: linear-gradient(90deg,#19856f,rgb(112, 112, 111),rgb(95, 45, 92));
+    background: linear-gradient(80deg,#19856f,rgb(112, 112, 111),rgb(95, 45, 92));
     color: #fff;
     text-align: center;
     padding: 20px;
+    margin-bottom: -20px;
 }
 .title-bar {
     background-color: #333; 
     color: #fff; 
-    padding: 10px;
+    padding: 0px;
 }
 /* Implement the symbol using media query */
 
-.title-bar h1 {
-    margin: 0;
-}
 
 section {
-    padding: 5px;
+    padding: 4px;
     margin: 20px;
 }
-.menu-icon {
-    font-size: 24px; 
-    cursor: pointer;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    display: flex;
-}
 
-nav li {
-    margin: 0 15px;
+nav ul {
+    /* position:fixed; */
+    overflow: auto;
+    list-style: none;
+    /* padding: -20px; */
+    display: flex;
+    justify-content: space-around;
+}
+nav li{
+    padding:2.3%;
+}
+nav li:hover{
+    background-color: rgb(231, 226, 226);
 }
 nav{
-    display: none;
-}
-nav.active{
-    display: block;
+    /* display: none; */    
 }
 nav a {
     text-decoration: none;
     color: #fff; 
     font-weight: bold;
+    border: solid rgb(19, 93, 77) 2px;
+    padding:10px;
+    background:linear-gradient(45deg,rgb(95, 45, 92),rgb(26, 52, 58));
+    border-radius: 6px;
 }
 
 nav a:hover {
-    color: #ffcc00; 
+    color: #84e8de; 
 }
 
 #linkedin{
     width: 30px;
     margin-right: 10px;
     display: inline;
+}
+#certs a:hover{
+   color: #555258 !important;
+   text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
 }
 #hackerrank{
     width: 30px;
@@ -186,7 +195,7 @@ li{
     color: #176e5cf5;
 }
 #certs a:hover{
-    color: #7d1ea0;
+    color: #5e2e76;
 }
 
 @media screen and (max-width: 768px) {
