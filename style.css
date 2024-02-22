@@ -206,7 +206,7 @@ li{
         text-decoration: none;
         color: #fff; 
         font-weight: bold;
-        font-size: 10px;
+        font-size: 60%;
         padding:6px;
     }
     
@@ -227,6 +227,9 @@ li{
     .menu-icon {
         font-size: 20px;
     }
+
+    /* Adjust font size and spacing for navigation links on mobile devices */
+  
 
     /* Adjust width of project containers for mobile devices */
     .project {
@@ -261,8 +264,8 @@ li{
         text-decoration: none;
         color: #fff; 
         font-weight: bold;
-        font-size: 2px;
-        padding:px;
+        font-size: 10px;
+        padding:2px;
     }
     nav li {
         margin: 0 5px; /* Further adjust margin for smaller screens */
