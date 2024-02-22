@@ -23,7 +23,3 @@ document.addEventListener('DOMContentLoaded', function () {
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check on page load
 });
-function toggleMenu() {
-    const nav = document.querySelector('nav');
-    nav.classList.toggle('active');
-}

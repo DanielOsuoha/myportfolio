@@ -7,7 +7,7 @@ body {
 }
 .social-links li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 8px;
 }
 
 header {
@@ -19,8 +19,8 @@ header {
 }
 .title-bar {
     background-color: #333; 
-    color: #fff; 
-    padding: 0px;
+    /* color: #fff;  */
+    /* padding: 0px; */
 }
 /* Implement the symbol using media query */
 
@@ -34,7 +34,6 @@ nav ul {
     /* position:fixed; */
     overflow: auto;
     list-style: none;
-    /* padding: -20px; */
     display: flex;
     justify-content: space-around;
 }
@@ -52,8 +51,8 @@ nav a {
     color: #fff; 
     font-weight: bold;
     border: solid rgb(19, 93, 77) 2px;
-    padding:10px;
-    background:linear-gradient(45deg,rgb(95, 45, 92),rgb(26, 52, 58));
+    padding:9px;
+    background:linear-gradient(45deg,rgb(84, 45, 95),rgb(26, 52, 58));
     border-radius: 6px;
 }
 
@@ -207,7 +206,8 @@ li{
         text-decoration: none;
         color: #fff; 
         font-weight: bold;
-        font-size: medium;
+        font-size: 10px;
+        padding:6px;
     }
     
     #header-id h1{
@@ -226,12 +226,6 @@ li{
     /* Make menu icon smaller for mobile devices */
     .menu-icon {
         font-size: 20px;
-    }
-
-    /* Adjust font size and spacing for navigation links on mobile devices */
-    nav li {
-        margin: 0 10px;
-        font-size: 14px;
     }
 
     /* Adjust width of project containers for mobile devices */
@@ -267,7 +261,8 @@ li{
         text-decoration: none;
         color: #fff; 
         font-weight: bold;
-        font-size: 100%;
+        font-size: 2px;
+        padding:px;
     }
     nav li {
         margin: 0 5px; /* Further adjust margin for smaller screens */
