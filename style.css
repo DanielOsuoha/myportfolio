@@ -19,11 +19,7 @@ header {
 }
 .title-bar {
     background-color: #333; 
-    /* color: #fff;  */
-    /* padding: 0px; */
 }
-/* Implement the symbol using media query */
-
 
 section {
     padding: 4px;
@@ -38,7 +34,8 @@ nav ul {
     justify-content: space-around;
 }
 nav li{
-    padding:2.3%;
+    padding-top:2.5%;
+    padding-bottom: 2.5%;
 }
 nav li:hover{
     background-color: rgb(231, 226, 226);
@@ -100,6 +97,7 @@ footer {
 li{
     padding: 10px;
     font-size: large;
+    margin-left: -5px ;
 }
 .project-container.in-view {
     opacity: 1;
