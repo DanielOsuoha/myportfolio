@@ -33,9 +33,6 @@ Developed a robust calculator app using Java and Swing, integrating JDBC for dat
 
 Developed an intelligent Tic-Tac-Toe game using Java and Swing, implementing strategic decision-making algorithms that resulted in a 30% increase in user engagement and a 20% improvement in player satisfaction ratings.
 
-### Hospital Inventory System
-
-Collaborating with a colleague, I am actively contributing to the development of a hospital inventory system. Responsible for Java and JDBC implementation to manage hospital bookings efficiently.
 
 ### Library Management System with PHP
 
