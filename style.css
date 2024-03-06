@@ -20,7 +20,6 @@ header {
 .title-bar {
     background-color: #333; 
 }
-
 section {
     padding: 4px;
     margin: 25px;
@@ -44,6 +43,7 @@ nav{
     /* display: none; */
     width: 100%;    
 }
+
 nav a {
     text-decoration: none;
     color: #fff; 
@@ -107,8 +107,11 @@ li{
 .project {
     position: relative;
     width: 45%; /* Adjust the width as needed */
-    margin-bottom: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border-radius: 15px;
     overflow: hidden;
+    box-shadow: 10px 10px 15px rgb(127, 126, 126);
 }
 #header-id{
     display: flex;
@@ -158,9 +161,6 @@ li{
     border-top: 5px solid rgb(222, 166, 23);
 }
 
-.project:hover .project-details {
-    transform: translateY(0);
-}
 .animated {
     opacity: 0;
     transform: translateY(80px); /* Adjust the initial position based on your preference */
@@ -174,12 +174,10 @@ li{
 }
 #abouttext {
     text-align: center;
-    opacity: 1;
     padding-left: 17%;
     padding-right: 17%;
     line-height: 38px;
-    transform: translateY(-10px);
-    /* font-style: oblique; */
+    transform: translateY(-20px);
     font-size: large;
     font-stretch: ultra-expanded;
     word-wrap: break-word;
@@ -187,10 +185,6 @@ li{
     transition: opacity 0.4s ease, transform 0.7s ease;
 }
 
-#abouttext.in-view {
-    opacity: 1;
-    transform: translateY(0px);
-}
 #certs{
     margin-right: 10%;
 }
