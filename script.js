@@ -19,6 +19,13 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+    //just running some tests
+    // function getlinks(){
+    //     let links = document.links;
+    //     for (i=0;i<links.length;i++){
+    //         console.log(links[i].href)
+    //     }
+    // }
 
     window.addEventListener('scroll', handleScroll);
     handleScroll(); // Initial check on page load

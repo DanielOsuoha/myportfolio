@@ -92,8 +92,8 @@ footer {
     justify-content: space-around;
     flex-wrap: wrap;
     opacity: 0;
-    transform: translateX(-50px); /* Initial position off-screen to the left */
-    transition: opacity 0.7s ease, transform 0.5s ease;
+    transform: translateX(-50px);/* Initial position off-screen to the left
+     transition: opacity 0.7s ease, transform 0.5s ease; */
 }
 li{
     padding: 10px;
@@ -147,6 +147,9 @@ li{
     background-color: white;
     border-radius: 10%;
 }
+.project:hover .project-details{
+    transform: translate(0);
+}
 .project-details {
     position: absolute;
     bottom: 0;
@@ -187,10 +190,14 @@ li{
 
 #certs{
     margin-right: 10%;
+    background-color: rgb(247, 243, 239); 
+    border-radius:20px;
+    border: solid rgba(30, 74, 70, 0.944);
+    padding: 3%;
 }
 #certs a{
     text-decoration: none;
-    color: #176e5cf5;
+    color: #1a4d43f5;
 }
 #certs a:hover{
     color: #5e2e76;
